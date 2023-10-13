@@ -1,0 +1,266 @@
+@charset "utf-8";
+@import url("font.css");
+
+body {font-size: 1.000em; font-family: "Noto Sans KR", "맑은 고딕", 돋움, Dotum, 굴림, Gulim, sans-serif; color: rgb(68, 68, 68);}
+#Wrap {font-size: 1rem; }
+.inner {width: 87.500em; margin: 0 auto;}
+
+/* 스와이퍼 mainTop */
+.mainTop {position: relative; height: 100vh; }
+.mainTop .BgSwiper {width: 100%; height: 100%; border-radius: 0 0 13.125em 0; }
+
+/* 스와이퍼 - .bg1 */
+.mainTop .BgSwiper .swiper-wrapper .bg1 {background: url(../img/img_visual01.jpg) no-repeat center/cover;}
+.mainTop .BgSwiper .swiper-wrapper .bg1 img {position: absolute; top: 30%; left: 50%; transform: translate(-50%, -30%); width: 31.250em; height: 14.375em;}
+.mainTop .BgSwiper .swiper-wrapper .bg1 p {position: absolute; left: 50%; bottom: 40%; transform: translateX(-50%); color: #fff; text-align: center; line-height: 2; font-size: 1.000em;}
+
+/* 스와이퍼 - .bg2 */
+.mainTop .BgSwiper .swiper-wrapper .bg2 {background: url(../img/img_visual02.jpg)no-repeat center/cover;}
+.mainTop .BgSwiper .swiper-wrapper .bg2 img {position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%); width: 31.250em; height: 15.625em;}
+.mainTop .BgSwiper .swiper-wrapper .bg2 p {position: absolute; left: 50%; bottom: 40%; transform: translateX(-50%); color: #fff; text-align: center; line-height: 2; font-size: 1.000em;}
+
+/* .btnView */
+.btnView {position: absolute; left: 50%; bottom: 25%; transform: translateX(-50%); border-radius: 3.125em; overflow: hidden; width: 12.500em; height: 4.375em; border: 0.188em solid #fff; z-index: 1; color: #fff;}
+.btnView:after {position: absolute; content: ""; width: 100%; height: 0; top: 0; left: 0; z-index: -1; border-radius: 0.188em; background-color: #09847F; background-image: linear-gradient(#09847F); transition: all 0.3s ease;}
+.btnView:hover {color: #fff;}
+.btnView:hover:after { top: auto; bottom: 0; height: 100%;}
+.btnView:active {top: 0.125em;}
+
+/* .bg1 .btnView */
+.swiper-wrapper .bg1 .btnView a {display: block; width: 11.250em; height: 4.375em; text-align: center; line-height: 4.375em; font-size: 1.000em; margin-left: 0.625em; }
+.swiper-wrapper .bg1 .btnView span {display: inline-block; width: 0.938em; height: 0.938em; background: url(../img/icon_arrow.png)no-repeat; background-size: 0.938em; vertical-align: middle; margin: 0 0 0.313em 0.625em;}
+
+/* .bg2 .btnView */
+.swiper-wrapper .bg2 .btnView a {display: block; width: 11.250em; height: 4.375em; text-align: center; line-height: 4.375em; font-size: 1.000em; margin-left: 0.625em; }
+.swiper-wrapper .bg2 .btnView span {display: inline-block; width: 0.938em; height: 0.938em; background: url(../img/icon_arrow.png)no-repeat; background-size: 0.938em; vertical-align: middle; margin: 0 0 0.313em 0.625em;}
+
+/* 스와이퍼 반향표 */
+.swiper-button-next {position: absolute; top: 50%; right: 10%; transform: translate(-50%, -10%); width: 5.000em; height: 5.000em; background: rgba(0,0,0,0.3); color: #fff;  border-radius: 50%;}
+.swiper-button-prev {position: absolute; top: 50%; left: 10%; transform: translate(-50%, -10%); width: 5.000em; height: 5.000em; background: rgba(0,0,0,0.3); color: #fff; border-radius: 50%;}
+
+.swiper-button-next:after {font-size: 1.875em;}
+.swiper-button-prev:after {font-size: 1.875em;}
+
+.BgSwiper:hover .swiper-button-next {transform: translateX(-120%); transition: all 0.7s;}
+.BgSwiper:hover .swiper-button-next:after {transform: translateX(30%); transition: all 0.7s; }
+
+.BgSwiper:hover .swiper-button-prev{transform: translatex(25%);  transition: all 1s;}
+.BgSwiper:hover  .swiper-button-prev:after {transform: translateX(-30%); transition: all 1s;}
+
+
+/* 단체예약신청 */
+.reservation {position: absolute; right: 15.625em; bottom: -6.250em; z-index: 4;}
+.reservation:hover .reImg span {position: absolute; left: 0; top: 0; display: inline-block; width: 11.875em; height: 11.875em; animation: ani 0.4s infinite alternate; border-radius: 50%; background: #09847F; color: #fff;}
+
+.reservation .reImg { width: 11.875em; height: 11.875em; border-radius: 50%; background: #09847F;  box-shadow: rgba(0, 0, 0, 0.16) 0 0.625em 2.250em 0, rgba(0, 0, 0, 0.06) 0 0 0 0.063em;}
+.reservation .reImg a {display: block;}
+.reservation .reImg .reder {text-align: center; padding: 3.125em 0;}
+.reservation .reImg img {width: 1.875em; height: 2.188em;}
+.reservation .reImg .reText {margin-top: 0.625em; color: #fff; font-weight: 700; font-size: 1.000em;}
+
+@keyframes ani {
+    0%{
+        transform: scale(1);
+        opacity: 0.5
+    }
+    100%{
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+}
+/* scroll  */
+.scroll {position:relative; position: absolute; left: 50%; bottom: 1.250em; transform: translateX(-50%); width:6.250em; height: 6.250em; z-index: 3; }
+.scroll p {color: #ffffff; text-align: center; font-size: 0.813em; letter-spacing: 0.188em; margin-bottom: 1.250em;}
+.scroll > .scrollball::after {content: ''; display: inline-block; width: 0.063em; height: 6.250em; background: rgba(255,255,255,0.3);}
+.scroll > span{display: inline-block; position: absolute; left: 2.938em; top:0; width: 0.313em; height: 0.313em; text-align: center; border-radius:50%; background:#ffffff; animation:ball 1.2s ease-in-out Infinite Alternate;}
+
+@keyframes ball {
+    0% {
+        top: 30px;
+    }
+    95% {
+        width: 5px;
+    }
+    to {
+        top: 110px;
+        width: 5px;
+        height: 5px
+    } 
+}
+
+/* header */
+header {position: fixed; top: 0; left: 0; right: 0; z-index: 5; height: 6.250em; border-bottom: 0.063em solid rgba(255,255,255,0.1); display: flex; justify-content: space-between; background: transparent; transition: all 0.3s;}
+header .logo {z-index: 10; float: left; width: 20%; height: 70px; margin: 1em 0;}
+header .logo a {display: block;}
+header .logo a img {width: 100%; height: 100%;}
+
+
+header.navbar.on {background: #fff;}
+header.navbar.on .gnb > li {color: #111;} 
+header.navbar.on .inner .util span {color: #000;}
+header.navbar.on .util span:last-child:before {background: #111;}
+
+header .inner .gnb {float: left; width: 50%; height: 6.250em; margin-left: 80px;}
+header .inner .gnb > li {float: left; width: calc(100%/5); height: 6.250em; color: #fff; text-align: center; line-height: 6.250em; transition: all 0.2s;}
+header .inner .gnb > li > a {width: 100%; height: 100%; display: block; font-size: 1.125rem; font-weight: 400;}
+header .inner .util {float: right; width: 10%; height: 6.250em; line-height: 6.250em;}
+header .inner .util span {color: rgba(255,255,255,0.8); font-size:0.875em;}
+header .inner .util span:last-child:before {content: ''; display: inline-block; width: 0.188em; height: 0.188em; transform: translateY(-3px); background: #fff; border-radius: 50%; margin: 0 10px; }
+
+/* 모바일 메뉴 */
+.mobile {display: none;}
+
+
+/* gnb2 */
+header .inner .gnb > li:hover ul {z-index: 3; transition: all 0.1s;}
+header .inner .gnb > li > ul {background: #fff; width: 11.875em;  border-radius: 1.563em; padding: 0.500em 0; margin: -1.875em 0 0 -1.875em; opacity: 0; transform: translateY(25px);}
+header .inner .gnb > li > ul li {color: rgba(0,0,0,0.8); line-height: 2.3; font-size: 0.938em; }
+header .inner .gnb > li > ul li:hover {color: #09847F;}
+header .inner .gnb > li > ul li a {display: block; padding: 0.313em;}
+
+/* mainMiddle */
+.mainMiddle {padding: 7.500em; box-sizing: border-box; height: 43.750em;}
+
+/* midLeft */
+.mainMiddle .midLeft {float: left; width: 43.750em; height: 27.500em; background: url(../img/img_dokdo.png)no-repeat right bottom #f8f8f8; border-radius: 3.125em;}
+.mainMiddle .midLeft .midLtext {padding: 4.375em 3.750em; box-sizing: border-box; width: 43.750em;}
+.mainMiddle .midLeft .midLtext h3 {margin-bottom: 1.250em; font-size: 1.875em; color: #000;}
+.mainMiddle .midLeft .midLtext > p {width: 420px; font-size: 1.000em; color: #555; line-height: 1.8;  word-break: keep-all;}
+
+
+/* midLeft .midBtn */
+.mainMiddle .midLeft .midBtn {margin-left: 4.375em; overflow: hidden; color: #09847F; transition: all 0.3s;}
+.mainMiddle .midLeft .midBtn a {display: inline-block; padding: 0.938em 1.875em; margin-right: 0 0 0 4.375em; border: 0.188em solid #09847F; border-radius: 2.188em; color: #09847F; font-size: 1.000rem;  transition: all 0.3s;}
+.mainMiddle .midLeft .midBtn a:hover, .mainMiddle .midLeft .midBtn a:focus { background: #09847F; color: #fff;}
+
+/* midRight */
+.midRight {float: right; width: 41.250em;  height: 27.500em; padding: 3.125em 3.125em 0 6.250em; box-sizing: border-box;}
+.midRight h3 {font-size: 1.875em; margin-bottom: 1.250em;}
+.midRight .Number ul {border-bottom: 0.063em dotted #ddd; height: 5.000em; margin-bottom: 1.875em;}
+.midRight .Number ul li {float: left;}
+.midRight .Number ul li figure {background:#f5f5f8; width: 4.375em; height: 4.375em; border-radius: 3.125em;}
+.midRight .Number ul li figure img {width: 100%; height: 100%; padding: 1.125em; box-sizing: border-box; color: #fff;}
+.midRight .Number ul li strong {display: inline-block; margin: 0.625em 0 0 1.875em; font-size: 1.875em;}
+.midRight .Number ul li a {display: block; background: #76777E; color: #fff; padding: 1.00em 1.750em;  margin: 0.938em 0 0 1.875em; border-radius: 1.875em; transition: all 0.8s; font-size: 0.875em;}
+.midRight .Number ul li a:hover, .midRight .Number ul li a:focus {background: #444;}
+
+
+/* midRight > .Information */
+.Information div {overflow: hidden; }
+.Information div:first-child dd {height: 6.250em; line-height: 1.7;}
+.Information div:first-child dd p:last-child {color: rgba(0,0,0,0.5); font-size: 16px; word-break: keep-all}
+
+.Information dt {position: relative; float: left; width: 20%; margin-bottom: 0.938em; font-size: 1.063em; font-weight: 500; color: #000; text-align: center;}
+.Information dt::before {position: absolute; content: ''; top: 0.625em; left: 0; width: 0.250em; height: 0.250em; background: #b9b6b5; display: block; border-radius: 3.125em;}
+.Information dd {float: left; width: 75%; color: #444; font-size: 1.063em; font-weight: 500; margin-left: 1.250em;}
+
+/* Notice */
+.Notice {position: relative; height: 37.500em;}
+
+/* .NoticeLeft */
+.NoticeLeft {position: relative; width: 34.375em; height: 30.625em;}
+.NoticeLeft::before {position: absolute; top: -5.625em; right: -7.500em; content: ''; width: 5.625em; height: 5.625em; border-radius: 50%; border: 3.750em solid #09847F;}
+.NoticeLeft h2 {font-size: 2.500em; padding: 1.875em 0 0.625em 0;}
+.NoticeLeft .LeftText {width: 350px; color: #555; font-size: 1.063em; line-height: 1.8;}
+
+/* NoticeSwiper */
+.NoticeSwiper {position: absolute; top: 0; right: 0; width: 68.750em; height: 30.625em; }
+.NoticeSwiper .swiper-slide { height: 30.625em; background: #f5f5f8; border-radius: 2.500em;}
+.NoticeSwiper .swipercontent a {display: block; height: 30.625em;}
+
+.swipercontent .noText {margin: 3.125em;}
+.swipercontent .noText figure {width: 18.750em; height: 12.500em; background: #ddd;  border-radius: 0.938em; margin-bottom: 1.875em; overflow: hidden;}
+.swipercontent .noText figure img { width: 100%; height: 26.250em;}
+.swiper-slide:first-child .noText figure img {width: 13.750em; height: 6.250em; margin: 3.125em;}
+
+.swipercontent .noText span {display: inline-block; font-size: 0.688em; color: #09847F; font-weight: 800; border: 0.063em solid #09847F; padding: 0.313em 0.625em; border-radius: 1.875em; margin-bottom: 1.250em;}
+.swipercontent .noText > .bigTxt {font-size: 1.313em; font-weight: 600; color: #111; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; margin-bottom: 1.250em;}
+.swipercontent .noText > .midTxt {font-size: 1.063em; color: #555; font-weight: 500; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+
+/* NoticeSwiper 버튼 */
+.next1 {position: absolute; left: 21.875em; top: 21.875em; width: 0.938em; height: 0.938em; background: #434250; color: #fff; padding: 0.938em; border-radius: 50%; z-index: 3;}
+.prev1 {position: absolute; left: 17.500em; top: 21.875em; width: 0.938em; height: 0.938em; background: #434250; color: #fff; padding: 0.938em; border-radius: 50%; z-index: 3;} 
+
+.next1:after, .prev1:after {font-size: 0.938em;}
+
+/* GreenZone */
+.GreenZone {width: 100%; height: 18.750em; display: inline-block; margin-bottom: -11.250em;}
+.GreenZone .inner  {position: relative; background: #09847F; border-radius: 3.750em; z-index: 3;}
+.GreenZone .inner div {float: left; width: 42.500em;}
+.GreenZone .inner div a {display: block; width: 100%; height: 15.000em; padding: 2.500em 1.875em 1.875em  3.125em;  box-sizing: border-box;}
+.GreenZone .inner .textZone > .BigText {font-size: 1.750em; color: #fff; font-weight: 500; margin-bottom: 0.625em;}
+.GreenZone .inner .textZone > .midText {font-size: 1.125em; color: #fff;}
+
+.GreenZone .inner .textZone {float: left; width: 70%; margin: 1.250em 0 0 0.625em;}
+.GreenZone .inner figure {float: right; width: 6.250em; height: 5.625em; margin: 1.875em 1.875em 0 0;}
+.GreenZone .inner figure img {width: 100%; height: 100%;}
+.GreenZone .inner .movie {margin-left: 1.250em;}
+.GreenZone .inner .movie a::after {display: block; content: ''; width: 0.063em; height: 11.875em; background: #3aaca1; position: absolute; top: 1.750em; left: 50%;}
+
+/* footer */
+footer {overflow: hidden; position: relative; height: 55.000em;}
+footer .fooBg .bg_banner {height: 42.500em; background: url(../img/bg_banner.jpg)no-repeat center bottom/cover; border-radius: 12.500em 0 0 0; display: flex;}
+
+footer .fooBg .inner {position: absolute; top: 0; left: 50%; top: -1.875em; transform: translateX(-50%); height: 31.250em; margin-top: 12.500em;} 
+
+footer .fooBg .foonTop {position: absolute; left: 50%; top: 1.875em; transform: translateX(-50%); text-align: center;}
+footer .fooBg .foonTop figure {width: 12.500em; height: 5.000em; margin: 0 0 1.875em 50%; transform: translateX(-50%);}
+footer .fooBg .foonTop figure img {width: 100%; height: 100%;}
+footer .fooBg .foonTop .foonani .aniText1 {width: 100%; height: 100%; font-size: 1.875em; color: #434250;}
+
+/* footer 글씨 효과 */
+footer .fooBg .foonTop .foonani .aniText {font-size: 1.875em; min-width: 0.688em; white-space: nowrap; margin: 0; position: fixed; color: transparent; top: 4.375em; left:50%; transform: translate(-50%, -50%);}
+footer .fooBg .foonTop .foonani .aniText::before {content: '"경상북도 울릉읍 독도리 1-96"'; position: absolute; top: 0; left: 0; max-width: 100%; height: 100%; color: rgba(255,255,255,0.8); overflow: hidden; border-right: 1px solid #fff; animation: typing 5s steps(18) infinite;}
+
+@keyframes typing{
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
+/* .footbotom */
+footer .footbotom {background: #393846; padding: 1.250em 0;}
+footer .footbotom .footerArea {width: 87.500em; margin: 0 auto;}
+
+/* .footbotom > fooText */
+.fooText {float: left; width: 62%; color: #ffff; font-size: 0.813em; margin-top: 1.875em}
+.fooText .fooTopText {display: inline-block; margin-bottom: 0.938em;}
+
+.fooText .fooTopText span {margin-right: 0.250em;}
+.fooText .fooTopText span:first-child::after {display: inline-block; content: ""; width: 0.188em; height: 0.188em; border-radius: 50%; background: #fff; transform: translateY(-0.250em); margin-left: 0.500em;}
+.fooText .fooTopText span:last-child::before {display: inline-block; content: ""; width: 0.188em; height: 0.188em; border-radius: 50%; background: #fff; transform: translateY(-0.250em); margin-right: 0.500em;}
+
+.fooText .foomidText {margin-bottom: 2.500em;}
+.fooText .foomidText p {display: inline-block; margin-right: 0.625em;}
+
+.fooText .foocopy {font-size: 0.938em; color: #9999;}
+
+/* .footbotom > foomidImg */
+.footbotom .foomidImg {position: relative; float: right; width: 22%; height: 18.750em; margin-top: -1.250em;}
+
+.footbotom .foomidImg .fooWAimg {float: left; width: 6.875em; height: 5.000em; margin-top: 5.000em;}
+.footbotom .foomidImg .fooWAimg img {width: 100%; height: 100%;}
+
+.footbotom .foomidImg .map {float: right;  width: 10.625em; height: 10.625em; border-radius: 50%; background: #B4613D;}
+.footbotom .foomidImg .map .mapImg a {display: block;}
+.footbotom .foomidImg .map .mapImg .mapArea {text-align: center; padding: 2.188em 0;}
+.footbotom .foomidImg .map .mapImg img {width: 1.875em; height: 2.188em;}
+.footbotom .foomidImg .map .mapImg .mapText {margin-top: 0.625em; color: #fff; font-weight: 700; font-size: 1.000em;}
+.map:hover .mapImg  span {position: absolute; left: 45%; top: 0; display: inline-block; width: 10.625em; height: 10.625em; animation: ani 0.4s infinite alternate; border-radius: 50%; background: #B4613D;}
+@keyframes ani {
+    0%{
+        transform: scale(1);
+        opacity: 0.5
+    }
+    100%{
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+}
+

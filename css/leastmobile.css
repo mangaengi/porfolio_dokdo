@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import url("font.css");
+
+/* 스와이퍼 mainTop */
+.mainTop .BgSwiper {border-radius: 0 0 60px 60px; }
+
+/* mainTop .bg1 */
+.mainTop .BgSwiper .swiper-wrapper .bg1 p {width: 400px; bottom: 43%; font-size: 13px;}
+
+/* mainTop .bg2 */
+.mainTop .BgSwiper .swiper-wrapper .bg2 p {width: 400px; bottom: 43%; font-size: 13px;}
+
+/* 스와이퍼 반향표 */
+.swiper-button-next {width: 50px; height: 50px; right: -30px;}
+.swiper-button-prev {width: 50px; height: 50px; left: 20px;}
+
+/* .btnView */
+.btnView {padding: 10px 25px; bottom: 25%;}
+.swiper-wrapper .bg1 .btnView a {font-size: 15px; line-height: 3; margin-right: 30px; margin-left: -15px;}
+.swiper-wrapper .bg2 .btnView a {font-size: 15px; line-height: 3; margin-left: -15px;}
+
+/* 단체예약신청 */
+.reservation {right: 60px; bottom: -150px;}
+
+/* .mainMiddle */
+.mainMiddle {height: 950px;}
+.mainMiddle .inner {width: 420px;}
+
+/* .mainMiddle .midLeft */
+.mainMiddle .midLeft {width: 400px; height: 370px; background-size: 320px; border-radius: 25px; margin-left: 20px;}
+.mainMiddle .midLeft .midLtext h3 {margin-top: 30px;}
+.mainMiddle .midLeft .midLtext > p {width: 300px; font-size: 15px; font-weight: 500; color: rgba(0,0,0,0.8);}
+
+/* .mainMiddle > .midBtn */
+.mainMiddle .midLeft .midBtn {margin-left: 40px;}
+.mainMiddle .midLeft .midBtn a {padding: 15px 30px; font-size: 16px;}
+
+/* midRight */
+.midRight {width: 400px; height: 500px; padding: 30px; border-radius: 25px; margin-left: 20px;}
+
+/* .midRight .Number */
+.midRight .Number ul li figure {display: none;}
+.midRight .Number ul li strong {margin-left: 0; font-size: 28px;}
+.midRight .Number ul li a {padding: 12px 20px; margin-left: 20px;}
+
+/* midRight > .Information */
+.Information div {margin-bottom: 15px;}
+.Information dt {width: 80px; font-size: 17px; font-weight: 800;}
+.Information dd {width: 220px; font-size: 17px; line-height: 1.6;}
+.Information div:first-child dd {height: 150px; word-break: keep-all}
+
+
+/* Notice */
+.Notice {height: 700px;}
+.Notice .inner {width: 400px; height: 800px; }
+
+/* NoticeSwiper */
+.NoticeSwiper {width: 390px; height: 500px; left: 0; margin-top: 40px;}
+.NoticeSwiper .swipercontent a {height: 100%;}
+.NoticeSwiper .swiper-slide {background: none;}
+
+/* Notice .NoticeLeft*/
+.NoticeLeft {width: 420px;}
+.NoticeLeft .LeftText {width: 300px; font-size: 16px; color: rgba(0,0,0,0.6);}
+
+/* .swipercontent .noText */
+.swipercontent .noText {margin: 0; background: none;}
+.swipercontent .noText figure {width: 100%; height: 220px; border-radius: 0.938em; margin-bottom: 1.875em;}
+.swipercontent .noText figure img {width: 100%; }
+.swiper-slide:first-child .noText figure img {width: 220px; height: 80px; margin: 0; padding: 80px;}
+
+.swipercontent .noText span {padding: 5px 10px; font-size: 14px;}
+.swipercontent .noText > .bigTxt {font-size: 24px; margin-bottom: 10px; font-weight: bold;}
+.swipercontent .noText > .midTxt {font-size: 17px;}
+
+/* NoticeSwiper 버튼 */
+.next1 {left: 50%; top: 92%; width: 15px; height: 15px;}
+.prev1 {left: 45%; top: 92%; width: 15px; height: 15px;}
+
+/* GreenZone */
+.GreenZone {overflow: hidden; height: 400px;}
+.GreenZone .inner {width: 400px; height: 400px;}
+.GreenZone .inner div {width: 400px;}
+.GreenZone .inner div a {width: 100%; height: 200px; padding: 40px}
+.GreenZone .inner .movie a::after {width: 350px;}
+
+/* footer */
+footer {height: 890px;}
+
+/* footer 글씨 효과 */
+footer .fooBg .foonTop .foonani .aniText1 {font-size: 20px;}
+footer .fooBg .foonTop .foonani .aniText::before {font-size: 20px;}
+
+/* .footbotom */
+footer .footbotom {height: 100%; padding: 20px; margin-top: -20px;}
+footer .footbotom .footerArea  {width: 400px;} 
+.fooText .fooTopText , .fooText .foomidText , .fooText .foocopy{width: 400px;}
+.fooText .fooTopText {font-size: 13px;}
+.fooText .foomidText {font-size: 14px; line-height: 1.7;}
+.fooText .foocopy {margin-top: -10px;}
+
+.footbotom .foomidImg {float: none;}
+.footbotom .foomidImg .fooWAimg {width: 120px; height: 90px; margin: 30px 0 0 0;}
+
+/* 모바일 메뉴부분 */
+header .inner .util {display: none;}
+header .inner .util span:last-child:before {display: none;}
+
+/* .moinner */
+.moinner {height: 70px; border-bottom: 1px solid rgba(255,255,255,0.1);}
+
+.mobileMenu .moinner .util {display: block; float: none; width: 100%; margin: 70px 0 0 0; border-bottom: 1px dotted rgba(255,255,255,0.1);}
+.mobileMenu .moinner .util span {display: inline-block; width: 100px; height: 40px; margin: 40px 0 0 15px; border: 1px solid rgba(255,255,255,0.8); border-radius: 35px;}
+.mobileMenu .moinner .util span a {display: block; width: 100%; height: 100%; line-height: 3; font-size: 14px; }
+.mobileMenu .moinner .util span a:hover {background: rgba(255,255,255,0.8); color: black; border-radius: 35px;}
+
+/* 모바일 메뉴 아코디언 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+@charset "utf-8";
+@import url("font.css");
+
+
+
+.mainTop {position: relative; height: 100%;}
+.mainTop footer {position: absolute; left: 0; bottom: -18%; width: 100%;}
+footer .fooBg .bg_banner {border-radius: 180px 0 0 0;}
+
+.main .content:first-child {position: relative; width: 100%; height: 100vh;  background: url(../img/bg_guide01.jpg) no-repeat  center/cover;}
+.main .content:first-child .maintext {position: absolute; right: 15%; top: 60%; transform: translateY(-60%); color: #fff;}
+.main .content:first-child .maintext h2 {font-size: 36px; margin-bottom: 20px;}
+.main .content:first-child .maintext p {font-size: 16px; line-height: 1.9;}
+
+.main .content:nth-child(2) {position: relative; width: 100%; height: 100vh; background: url(../img/bg_guide02.jpg) no-repeat center/cover;}
+.main .content:nth-child(2) .maintext {position: absolute; right: 15%; top: 60%; transform: translateY(-60%); color: #fff;}
+.main .content:nth-child(2) .maintext h2 {font-size: 36px; margin-bottom: 20px;}
+.main .content:nth-child(2) .maintext p {font-size: 16px; line-height: 1.9;}
+
+.main .content:nth-child(3) {position: relative;  width: 100%; height: 100vh; background: url(../img/bg_guide03.jpg) no-repeat center/cover;}
+.main .content:nth-child(3) .maintext {position: absolute; right: 15%; top: 60%; transform: translateY(-60%); color: #fff;}
+.main .content:nth-child(3) .maintext h2 {font-size: 36px; margin-bottom: 20px;}
+.main .content:nth-child(3) .maintext p {font-size: 16px; line-height: 1.9; }
+
+.main .content:nth-child(4) {position: relative;  width: 100%; height: 110vh; background: url(../img/bg_guide04.jpg) no-repeat center/cover;}
+.main .content:nth-child(4) .maintext {position: absolute; right: 15%; top: 50%; transform: translateY(-50%); color: #fff;}
+.main .content:nth-child(4) .maintext h2 {font-size: 36px; margin-bottom: 20px;}
+.main .content:nth-child(4) .maintext p {font-size: 16px; line-height: 1.9;}
+
+/* .reservation  */
+.reservation {bottom: 130px; left: 50px; margin-left: -100px;}
+.reservation .reImg {width: 170px; height: 170px;}
+.reservation:hover .reImg span {width: 170px; height: 170px;}
+
+
+

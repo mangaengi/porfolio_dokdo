@@ -1,0 +1,41 @@
+@charset "utf-8";
+@import url("font.css");
+
+/* .mainTop */
+.mainTop {background: url(../img/img_visual02-2.jpg)no-repeat center/cover; width: 100%; height: 40.625em; border-radius: 0 0 13.125em 0; margin-bottom: 9.375em;}
+.mainText {position: absolute; left: 50%; bottom: 30%; transform: translate(-50%, -30%); text-align: center;}
+.mainText h2 {opacity: 0; font-size: 3.563em; color: #fff; margin-bottom: 0.625em;}
+.mainText .maText {opacity: 0; font-size: 1.125em; color: #fff;}
+
+/* Banner */
+.inner {width: 87.500em; position: relative; }
+.inner .Banner {position: absolute; top: -12.500em; left: 0; width: 87.500em; height: 5.625em; background: linear-gradient(45deg, #05875A, #09847F); border-radius: 1.875em 0 1.875em 0; text-align: center;}
+.inner .Banner ul {float: left; width: 25.000em; margin-left: 4.375em;}
+.inner .Banner ul li {float: left; width: calc(100%/3); height: 5.625em; }
+.inner .Banner ul li a {display: block; height: 100%; font-size: 1.125em; line-height: 5; color: #fff; font-weight: 500;}
+.inner .Banner ul li a:hover {transform: translateY(-3px);}
+.inner .Banner figure {float: right; width: 18.750em; height: 9.375em; background: url(../img/img_dokdo.png)no-repeat center/cover; margin: -3.750em 0 0; border-radius: 0 0 1.875em 0;}
+
+/* -------------------------------------------------- */
+/* Viewing */
+.inner .Viewing {height: 37.500em; background: #f7f7f7; border-radius: 0 0 8.125em 0 ;}
+.inner .Viewing figure {float: left; width: 60%; height: 100%; background: url(../img/img_preview.jpg)no-repeat center/cover;}
+
+.inner .Viewing .ViewingText {float: left; padding: 3.750em;}  
+.inner .Viewing .ViewingText dl div {margin-bottom: 1.875em;}
+.inner .Viewing .ViewingText dl div dt {font-size: 1.688em; font-weight: 700; margin-bottom: 0.625em;}
+.inner .Viewing .ViewingText dl div dd {font-size: 1.063em; line-height: 1.7;}
+.inner .Viewing .ViewingText dl div dd .point {color:#099789;}
+
+/* precautions */
+.inner .precautions {padding: 100px 0 ;}
+.inner .precautions p {float: left; width: 25%; font-size: 1.688em; font-weight: bold; margin-left: 0.625em;}
+.inner .precautions ul {float: left;}
+.inner .precautions ul li {position: relative; font-size: 1.063em; line-height: 2.2;}
+.inner .precautions ul li::before {display: inline-block; position: absolute; top: 50%; left: 0; content: ''; width: 0.250em; height: 0.250em; background: #b9b6b5; border-radius: 50%;  margin-left: -0.938em;}
+
+/* .reservation  */
+.reservation {bottom: 8.125em; left: 3.125em; margin-left: -100px;}
+.reservation .reImg {width: 10.625em; height: 10.625em; }
+.reservation:hover .reImg span {width: 10.625em; height: 10.625em;}
+.reservation .reImg .reder {padding: 2.188em 0;}

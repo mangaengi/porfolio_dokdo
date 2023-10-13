@@ -1,0 +1,28 @@
+@charset "utf-8";
+@import url("font.css");
+
+/* .mainTop */
+.mainTop {background: url(../img/img_visual02-2.jpg)no-repeat center/cover; width: 100%; height: 40.625em; border-radius: 0 0 13.125em 0; margin-bottom: 9.375em;}
+.mainText {position: absolute; left: 50%; bottom: 30%; transform: translate(-50%, -30%); text-align: center;}
+.mainText h2 {opacity: 0; font-size: 3.563em; color: #fff; margin-bottom: 10px;}
+.mainText .maText {opacity: 0; font-size: 1.125em; color: #fff;}
+
+/* inner */
+.inner h2 {text-align: center; font-size: 30px; margin-bottom: 50px; color: #111;}
+form {text-align: center;}
+form input {width: 410px; height: 60px; background: #f7f7f7; border-radius: 30px; border: none; padding-left: 20px; margin-bottom: 20px;}
+form input:focus {outline: none;}
+form button {width: 440px; height: 60px; border-radius: 30px; background: #fff; border: 2px solid #09847F; color: #09847F; font-size: 18px; font-weight: 600; transition: all 0.3s;}
+
+form button:focus, form button:hover {background: #09847F; color: #fff; transition: all 0.3s; box-shadow: 5px 15px 20px rgb(0 166 85 / 22%);}
+
+.inner .social {height: 200px; line-height: 8; text-align: center;}
+.inner .social a {position: relative; margin-left: 15px; }
+.inner .social a::before {position: absolute; left: -13px; top: 10px;  content: ''; width: 5px; height: 5px; border-radius: 50%; background: #e1e1e1; }
+.inner .social a:first-child::before {display: none;}
+
+/* .reservation  */
+.reservation {bottom: 8.125em; left: 3.125em; margin-left: -100px;}
+.reservation .reImg {width: 10.625em; height: 10.625em; }
+.reservation:hover .reImg span {width: 10.625em; height: 10.625em;}
+.reservation .reImg .reder {padding: 2.188em 0;}

@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import url("font.css");
+
+body {color: rgb(68, 68, 68);}
+
+/* .mainTop */
+.mainTop {background: url(../img/img_visual01-2.jpg)no-repeat center/cover; width: 100%; height: 650px; border-radius: 0 0 210px 0;}
+.mainText {position: absolute; left: 50%; bottom: 30%; transform: translate(-50%, -30%); text-align: center;}
+.mainText h2 {opacity: 0; font-size: 57px; color: #fff; margin-bottom: 10px;}
+.mainText .maText {opacity: 0; font-size: 18px; color: #fff;}
+/* Banner */
+.inner {width: 1400px; position: relative; }
+.inner .Banner {position: absolute; top: -50px; left: 0; width: 1400px; height: 90px; background: linear-gradient(45deg, #05875A, #09847F); border-radius: 30px 0 30px 0; text-align: center;}
+.inner .Banner > ul {float: left; width: 400px; margin-left: 70px;}
+.inner .Banner > ul li {float: left; width: calc(100%/3); height: 90px; }
+.inner .Banner > ul li a {display: block; height: 100%; font-size: 18px; line-height: 5; color: #fff; font-weight: bold;}
+.inner .Banner > ul li a:hover {transform: translateY(-3px);}
+.inner .Banner figure {float: right; width: 300px; height: 150px; background: url(../img/img_dokdo.png)no-repeat center/cover; margin: -60px 0 0; border-radius: 0 0 30px 0;}
+
+/* .tab_group */
+.tab_group {padding: 180px 0 150px; box-sizing: border-box; }
+
+/* .tab_group > .tab */
+.tab {padding: 33px 0 80px;}
+.tab ul {display: flex; height: 60px; border-bottom: 1px solid #09847F; cursor: pointer;}
+.tab ul li {flex: 1; height: 60px; margin: 0 0 -1px; border: 1px solid #d7d7d7;}
+.tab ul li button {width: 100%; height: 59px; background: #ffffff; border: none; font-size: 17px; cursor: pointer;}
+.tab ul li.on {z-index: 2; height: 59px; border-color: #09847F; border-bottom: 1px solid #fff;}
+.tab ul li.on button {background: #fff;}
+
+.tab_content {line-height: 1.7; font-size: 40px; display: none;}
+.tab_content.on {display: block;}
+
+/* --------------------- */
+/* .tab_group > .tab_content */
+.tab_group .tab_content:nth-child(2) h2 {height: 100px; font-size: 35px; text-align: center;}
+.tab_group .tab_content:nth-child(2) h2  span {color: #09847F; }
+
+/* .tab_content .Viewing  */
+.tab_group .tab_content .Viewing {height: 700px; background: #f7f7f7f7; border-radius: 0 0 90px;}
+.tab_group .tab_content .Viewing figure {float: left; width: 700px; height: 100%; background: url(../img/img_location.jpg)no-repeat center/cover;}
+.tab_content .Viewing .ViewingText {float: right; width: 700px; height: 100%;}
+.tab_content .Viewing .ViewingText strong {font-weight: 700; color: rgba(0,0,0,0.8);}
+.tab_content .Viewing .ViewingText div {margin-bottom: 20px;}
+.tab_content .Viewing .ViewingText dl {padding: 60px; color: rgba(0,0,0,0.6);}
+.tab_content .Viewing .ViewingText dt {font-size: 26px; margin-bottom: 10px; font-weight: bold; color: #222;}
+.tab_content .Viewing .ViewingText dd {font-size: 16px; color: #222;}
+.tab_content .Viewing .ViewingText dd .point {color: rgba(0,0,0,0.6);}
+.tab_content .Viewing .ViewingText dd span {color: #099789; }
+
+.tab_content .Viewing .ViewingText .Location dt {float: left; width: 13%; font-size: 17px;}
+
+.tab_content .published {height: 100px; margin-top: 30px; font-size: 17px; color: rgba(0,0,0,0.6);}
+/* --------------------- */
+/* ground */
+.tab_content .ground {text-align: center; margin-bottom: 80px;}
+.tab_content .ground > h2 {font-size: 35px; margin-bottom: 40px;}
+.tab_content .ground > h2 span {color: #09847F;}
+.tab_content .ground .groundText {font-size: 16px;}
+
+    /* table */
+.tab_content table {width: 1000px; margin: 0 auto; margin-bottom: 100px;}
+.tab_content table tr:first-child { border-top: 1px solid rgb(68, 68, 68); background: #f7f7f7;}
+.tab_content table tr {font-size: 17px; border-bottom: 1px solid #ddd; text-align: center;}
+.tab_content table tr td {width: 100px; padding: 10px 30px ; border-left: 1px solid #ddd;} 
+.tab_content table tr td:first-child {border: none;}
+
+/* Topographi */
+
+.Topographi .TopographiText {margin-top: -30px;}
+.Topographi .TopographiText li {float: left; width: calc(100%/4 - 30px); height: 200px; padding: 20px 30px; box-sizing: border-box; border: 1px solid rgb(212, 226, 225); margin: 0 30px 30px 0; line-height: 1.8; border-radius: 0 0 30px 0; }
+.Topographi .TopographiText li a {display: inline-block;  }
+.Topographi .TopographiText li a .BigText {margin-bottom: 10px; font-size: 18px; font-weight: 700;}
+.Topographi .TopographiText li a .smailText {font-size: 14px; font-weight: normal;}
+.Topographi .TopographiText li:hover .BigText {color: #09847F;}
+.Topographi .TopographiText li:hover{border: 1px solid #09847F; }
+.Topographi .TopographiText li::nth-child(n+5):nth-child(-n+8) {color: #000000;}
+
+/* .TopographiImg */
+.tab_content .TopographiImg {position: relative;}
+.tab_content .TopographiImg figure {width: 100%; height: 800px; margin: 50px 0; background: url(../img/bg_map.png) no-repeat center/cover;}
+.tab_content .TopographiImg .TopoImgTxt {position: absolute; top: 15%; right: 100px; width: 240px; height: 400px; padding: 40px; background: #ffffff; font-size: 15px; border-radius: 45px;}
+.tab_content .TopographiImg .TopoImgTxt .ToTxt01 {float: left; width: 50%;}
+.tab_content .TopographiImg .TopoImgTxt .ToTxt01 > p {margin-bottom: 5px;}
+.tab_content .TopographiImg .TopoImgTxt .ToTxt02 {float: left; width: 50%;}
+.tab_content .TopographiImg .TopoImgTxt .ToTxt02 > p {margin: 0 0 5px 10px;}
+
+.tab_content .TopographiImg > p {font-size: 17px; text-align: center;}
+
+/* --------------------- */
+/* .Create */
+.tab_content .Create {text-align: center;}
+.tab_content .Create > h2 {font-size: 35px; margin-bottom: 50px;}
+.tab_content .Create > h2 span {color: #09847F;}
+
+.tab_content .Create .CreateText {font-size: 17px; margin-bottom: 80px;}
+.tab_content .Create .CreateText p {margin-bottom: 20px; line-height: 1.8;}
+.tab_content .Create p {font-size: 17px; margin-top: 30px;}
+/* figure */
+.tab_content .Create .figureTopTxt {background: rgb(57, 56, 70); font-size: 16px; padding: 20px; color: #fff; font-weight: 700;}
+.tab_content .Create figure {width: 100%; height: 800px; background: url(../img/img_creation.jpg) no-repeat center/cover; border-radius: 0 0 0 180px;}
+.tab_content .Create .figurebottonTxt {font-size: 17px; line-height: 1.8;}
+
+
+
+/* .reservation  */
+.reservation {bottom: 130px; left: 50px; margin-left: -100px;}
+.reservation .reImg {width: 170px; height: 170px;}
+.reservation:hover .reImg span {width: 170px; height: 170px;}
+
+

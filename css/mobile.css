@@ -1,0 +1,201 @@
+@charset "utf-8";
+@import url("font.css");
+
+
+/* 스와이퍼 mainTop */
+.mainTop .BgSwiper {border-radius: 0 0 11.250em 0; }
+
+/* mainTop .bg1 */
+.mainTop .BgSwiper .swiper-wrapper .bg1 img {width: 20.000em; height: 9.375em; top:  35%;}
+.mainTop .BgSwiper .swiper-wrapper .bg1 p {width: 27.500em; bottom: 43%; font-size: 13px;}
+
+/* mainTop .bg2 */
+.mainTop .BgSwiper .swiper-wrapper .bg2 img {width: 20.000em; height: 9.375em; top:  35%;}
+.mainTop .BgSwiper .swiper-wrapper .bg2 p {width: 27.500em; bottom: 45%; font-size: 0.813em;}
+
+/* .btnView */
+.btnView { bottom: 32%; width: 8.750em; height: 2.500em; border: 0.125em solid #fff;}
+.swiper-wrapper .bg1 .btnView a {font-size: 11px; line-height: 4; }
+.swiper-wrapper .bg2 .btnView a {font-size: 11px; line-height: 4; }
+
+/* 스와이퍼 반향표 */
+.swiper-button-next {width: 3.125em; height: 3.125em; right: 0;}
+.swiper-button-prev {width: 3.125em; height: 3.125em; left: 1.875em;}
+.swiper-button-next:after, .swiper-button-prev:after {font-size: 0.938em;}
+
+
+/* 단체예약신청 */
+.reservation {right: 1.875em; bottom: 0;}
+.reservation .reImg {width: 7.500em; height: 7.500em;}
+.reservation .reImg .reder { padding: 1.250em 0;}
+.reservation .reImg img  {width: 1.250em; height: 1.250em;}
+.reservation .reImg .reText {margin-top: 0.625em; font-size: 0.813em;}
+.reservation:hover .reImg span {position: absolute; left: -0.313em; top: -0.313em; display: inline-block; width: 8.125em; height: 8.125em; animation: ani 0.4s infinite alternate; border-radius: 50%; background: #09847F; color: #fff;}
+
+/* header */
+header  {height: 4.375em; width: 100%;}
+header .logo {float: left; width: 30%; margin: 1.125em 0 0 3px; }
+header .logo a {display: block; width: 15.000em; height: 1.875em; margin: -20px 0 0 15px;}
+header .logo a img {width: 250px; height: 35px;}
+header .inner .util {width: 28%; line-height: 4;}
+header .inner .util span {font-size: 0.750em;}
+
+/* 모바일 gnb 숨김 */
+header .inner .gnb {display: none;}
+
+/* 모바일 메뉴 */
+.moinner {position: absolute; top: 0; left: 0; width: 100%;}
+.moinner figure {width: 40%; margin: 18px 0 0 -130px; display: inline-block;}
+.moinner figure img {width: 100%; height: 35px;}
+.moinner .util {margin-right: 2.156em;}
+.mobile {display: block; height: 100%;}
+.mobileButton {z-index: 6; position: absolute; transition: .3s ease-in-out; width: 1.563em; height: 0.938em; display: block; top: 1.563em; right: 1.250em;}
+.mobileButton span {position: absolute; display: flex; height: 0.125em; border-radius: 0.250em; width: 100%; background-color: #fff; top: 0; transition: transform .2s ease-in-out, opacity .2s ease-in-out; }
+
+header.navbar.on .mobileButton span { background-color: #111;}
+
+.mobileButton > span:nth-child(1) {top: 0px;}
+.mobileButton > span:nth-child(2), .mobileButton > span:nth-child(3) {top: 0.500em;}
+.mobileButton > span:nth-child(4) {top: 16px;}
+.mobileButton.active > span:nth-child(1), .mobileButton.active > span:nth-child(4) {opacity: 0;}
+.mobileButton.active > span:nth-child(2) {transform: rotate(45deg);}
+.mobileButton.active > span:nth-child(3) {transform: rotate(-45deg);}
+
+.mobileButton > ul > li{list-style: none; padding: 0; margin: 0; opacity: 0;padding: 1.250em; font-size: 1.5rem;}
+
+.mobileButton > a{color: rgb(255, 255, 255); text-decoration: none; transition: opacity 0.2s ease;}
+
+.mobileButton > a:hover{color: white;}
+
+.mobileMenu{position: fixed; top: 0; right: 0; left: 0; background: url(../img/bg_banner.jpg)no-repeat center/cover; display: flex; align-items: center; justify-content: center; text-align: center; width: 100%; height: 100vh; opacity: 0; visibility: hidden; transition: 0.3s;}
+.mobileMenu .moMenu ul > li {color: #fff; font-size: 1.563em; line-height: 2.5;}
+.mobileMenu .moMenu ul > li:hover {box-shadow: rgb(38, 57, 77) 0px 1.250em 1.875em -0.625em; border-radius: 0.938em;}
+.mobileMenu.visible {height: 100%; opacity: 1; visibility: visible;}
+
+@keyframes fadeInLeft{
+    0% { opacity: 0; transform: translateX(0);}
+    100% { opacity: 1; transform: translateX(0);}
+}
+
+.mobileMenu.visible li{animation: fadeInLeft 0.3s ease forwards; }
+.mobileMenu.visible li:nth-child(1){animatio-delay: 0.23s;}
+.mobileMenu.visible li:nth-child(2){animatio-delay: 0.26s;}
+.mobileMenu.visible li:nth-child(3){animatio-delay: 0.29s;}
+.mobileMenu.visible li:nth-child(4){animatio-delay: 0.32s;}
+.mobileMenu.visible li:nth-child(5){animatio-delay: 0.35s;}
+
+/* mainMiddle */
+.mainMiddle {overflow: hidden; padding: 0; margin-top: 5.000em; height: 50.000em;}
+.mainMiddle .inner {width: 36.250em;}
+
+/* .mainMiddle .midLeft */
+.mainMiddle .midLeft {float: none; width: 36.250em; height: 20.000em;}
+.mainMiddle .midLeft .midLtext {padding: 2.500em;}
+.mainMiddle .midLeft .midLtext h3 {font-size: 1.500em;}
+.mainMiddle .midLeft .midLtext > p {width: 24.375em; font-size: 0.875em;}
+
+/* .mainMiddle > .midBtn */
+.mainMiddle .midLeft .midBtn {margin: 1.250em 0 0 2.500em;}
+.mainMiddle .midLeft .midBtn a {padding: 0.625em 1.563em; border: 0.125em solid #09847F; font-size: 0.750em;}
+
+/* midRight */
+.midRight {float: none; width: 36.250em; height: 26.250em; background: #f8f8f8; border-radius: 3.125em; margin-top: 1.875em; padding: 3.125em;}
+.midRight h3 {font-size: 1.500em; margin-bottom: 1.250em;}
+
+/* .midRight .Number */
+.midRight .Number ul {height: 3.875em; margin-bottom: 1.250em;}
+.midRight .Number ul li figure {background:#fff; width: 3.438em; height: 3.438em;}
+.midRight .Number ul li figure img {width: 100%; height: 100%; padding: 0.625em;}
+.midRight .Number ul li strong {font-size: 1.625em; margin-left: 4.063em; margin-top: 0.625em;}
+.midRight .Number ul li a {padding: 0.625em 1.250em; font-size: 0.750em; margin-top: 0.625em;}
+
+/* midRight > .Information */
+.Information dt {font-size: 1.000em; }
+.Information dd {font-size: 0.938em;}
+.Information div:first-child dd {height: 7.500em; word-break: keep-all}
+
+/* Notice */
+.Notice {height: 43.750em;}
+.Notice .inner {width: 36.250em;}
+.NoticeLeft {width: 36.250em; height: 9.375em;}
+.NoticeLeft h2 {font-size: 1.875em; padding: 1.250em 0;}
+.NoticeLeft .LeftText {font-size: 0.875em; width: 100%;}
+
+/* .NoticeLeft::before = 초록색 원 */
+.NoticeLeft::before {display: none;}
+
+/* .NoticeSwiper = 모바일 버전 공지사항*/
+.NoticeSwiper {top: 200px; width: 36.250em;}
+.NoticeSwiper .swipercontent a {height: 18.750em;}
+.NoticeSwiper .swiper-slide {border-radius: 0.625em; height: 23.750em;}
+
+.swipercontent .noText {margin: 1.250em;}
+.swipercontent .noText figure {width: 15.000em; height: 9.375em; border-radius: 0.625em;}
+.swipercontent .noText figure img {margin-top: -2.500em;}
+.swiper-slide:first-child .noText figure img {width: 10.000em; height: 60px; margin: 0; padding: 2.500em;}
+
+.swipercontent .noText span {display: inline-block; font-size: 0.625em; color: #09847F; font-weight: 800; border: 0.063em solid #09847F; padding: 0.313em 0.625em; border-radius: 1.875em; margin-bottom: 1.250em;}
+.swipercontent .noText > .bigTxt {font-size: 0.938em; font-weight: 600; color: #111; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; margin-bottom: 1.250em;}
+.swipercontent .noText > .midTxt {font-size: 0.875em; color: #555; font-weight: 500; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;}
+
+/* NoticeSwiper 버튼 */
+.next1 {left: 54%; padding: 0; top: 92%; width: 0.625em; height: 0.625em; background: #434250; border-radius: 50%;}
+.prev1 {left: 51%; padding: 0; top: 92%; width: 0.625em; height: 0.625em; background: #434250; border-radius: 50%;}
+.next1:after, .prev1:after {display: none;}
+
+/* GreenZone */
+.GreenZone {margin-bottom: -7.500em;}
+.GreenZone .inner {width: 35.000em; border-radius: 1.875em; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 0.938em;}
+.GreenZone .inner div {width: 35.000em;}
+.GreenZone .inner div a {width: 100%; height: 10.000em; padding: 1.875em;}
+.GreenZone .inner div:last-child a {margin-left: -1.250em;}
+
+/* .GreenZone > 텍스트 부분 */
+.GreenZone .inner .textZone  {margin-top: 0; }
+.GreenZone .inner .textZone > .BigText {font-size: 1.563em;}
+.GreenZone .inner .textZone > .midText {font-size: 0.875em; color: rgba(255,255,255,0.7);}
+
+/* .GreenZone > 이미지 부분 */
+.GreenZone .inner figure {width: 4.875em; height: 4.250em;}
+.GreenZone .inner figure img {width: 100%; height: 100%;}
+
+/* .GreenZone > .Experience */
+.GreenZone .inner .Experience {float: none;}
+
+/* .GreenZone > .movie */
+.GreenZone .inner .movie {float: none;}
+.GreenZone .inner .movie a::after {display: block; content: ''; width: 530px; height: 0.063em; background: #3aaca1; position: absolute; top: 50%; left: 1.875em;}
+
+/* footer */
+footer {height: 830px;}
+footer .fooBg .bg_banner {border-radius: 60px 0 0 0; height: 600px; }
+
+/* footer .fooBg .fooTop > 이미지 */
+/* 
+--- 이미지 확인하기
+footer .fooBg .fooTop figure {width: 500px; height: 2.500em;}
+footer .fooBg .fooTop figure img {width: 100%; height: 100%;} */
+
+
+/* footer 글씨 효과 */
+footer .fooBg .foonTop .foonani .aniText1 {font-size: 1.563em;}
+footer .fooBg .foonTop .foonani .aniText  {font-size: 1.563em; top: 88%; width: 100%;}
+footer .fooBg .foonTop .foonani .aniText::before { width: 100%; height: 100%; }
+
+/* .footbotom */
+footer .footbotom {height: 12.500em;}
+footer .footbotom .footerArea {width: 36.250em;}
+.fooText .fooTopText , .fooText .foomidText {font-size: 0.875em; line-height: 1.7;}
+.fooText .foocopy {font-size: 0.813em;}
+.footbotom .foomidImg {height: 12.500em;}
+.footbotom .foomidImg .fooWAimg {width: 6.250em; height: 4.375em;  margin: 6.250em 0 0 1.250em;}
+.footbotom .foomidImg .fooWAimg img {width: 100%; height: 100%;}
+
+/* 독도전시관 오시는길 모바일 */
+.map {display: none;}
+
+
+/* 모바일메뉴 아코디언 */
+
+.moBtn {display: none;}
+

@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import url("font.css");
+
+/* .mainTop */
+.mainTop {background: url(../img/img_visual01-2.jpg)no-repeat center/cover; width: 100%; height: 40.625em; border-radius: 0 0 13.125em 0;}
+.mainText {position: absolute; left: 50%; bottom: 30%; transform: translate(-50%, -30%); text-align: center;}
+.mainText h2 {opacity: 0; font-size: 3.563em; color: #fff; margin-bottom: 10px;}
+.mainText .maText {opacity: 0; font-size: 1.125em; color: #fff;}
+/* Banner */
+.inner {width: 87.500em; position: relative; }
+.inner .Banner {position: absolute; top: -3.125em; left: 0; width: 87.500em; height: 5.625em; background: linear-gradient(45deg, #05875A, #09847F); border-radius: 1.875em 0 1.875em 0; text-align: center;}
+.inner .Banner ul {float: left; width: 25.000em; margin-left: 4.375em;}
+.inner .Banner ul li {float: left; width: calc(100%/3); height: 5.625em; }
+.inner .Banner ul li a {display: block; height: 100%; font-size: 1.125em; line-height: 5; color: #fff; font-weight: 500;}
+.inner .Banner ul li a:hover {transform: translateY(-3px);}
+.inner .Banner figure {float: right; width: 18.750em; height: 9.375em; background: url(../img/img_dokdo.png)no-repeat center/cover; margin: -3.750em 0 0; border-radius: 0 0 1.875em 0;}
+
+/* greeting01 */
+.greeting01 {padding: 11.250em 9.375em 0 0;}
+
+/* .greeting01 > figure */
+.greeting01 > figure {float: left; width: 50.000em; height: 33.125em; background: url(../img/img_about01.jpg)no-repeat center/cover; border-radius: 0 0 8.750em 0;}
+
+/* .greetingTxt01 */
+.greeting01 > .greetingTxt01 {float: left; width: 43.750em; margin-left: 7.500em; padding: 3.750em 0;}
+.greeting01 > .greetingTxt01 h3 {font-size: 2.188em; margin-bottom: 2.500em; word-break: keep-all; font-weight: 600;}
+.greeting01 > .greetingTxt01 h3 span {color: #099789;}
+.greeting01 > .greetingTxt01 .greetText {font-size: 1.063em; line-height: 1.7;}
+
+/* greeting02 */
+.greeting02 {padding: 8.750em 0 10.000em 10.000em;}
+.greeting02 > figure {float: right; width: 48.750em; height: 31.250em; background: url(../img/img_about02.jpg)no-repeat center/cover; border-radius: 0 0 0 8.750em;}
+
+/* .greetingTxt02 */
+.greeting02 > .greetingTxt02 {float: left; width: 43.750em; margin-left: 7.500em; padding: 3.750em 0;}
+.greeting02 > .greetingTxt02 h3 {font-size: 2.188em; margin-bottom: 2.500em; word-break: keep-all; font-weight: 600;}
+.greeting02 > .greetingTxt02 h3 span {color: #099789;}
+.greeting02 > .greetingTxt02 .greetText {font-size: 1.063em; line-height: 1.7; margin-bottom: 2.500em;}
+
+/* .reservation  */
+.reservation {bottom: 8.125em; left: 3.125em; margin-left: -100px;}
+.reservation .reImg {width: 10.625em; height: 10.625em; }
+.reservation .reImg .reder {padding: 2.188em 0;}
+.reservation:hover .reImg span {width: 10.625em; height: 10.625em;}
+
+
+
+

@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import url("font.css");
+
+/* header */
+header  {height: 70px; width: 100%;}
+header .logo {float: left; width: 30%; margin: 1.125em 0 0 -0.063em; }
+header .logo a {display: block; width: 15.000em; height: 1.875em; margin: -20px 0 0 15px;}
+header .logo a img {width: 248px; height: 35px;}
+header .inner .util {width: 29%; line-height: 4;}
+header .inner .util span {font-size: 12px;}
+
+/* 모바일 gnb 숨김 */
+header .inner .gnb {display: none;}
+
+/* 모바일 메뉴 */
+.moinner {position: absolute; top: 0; left: 0; width: 100%;}
+.moinner figure {width: 40%; margin: 18px 0 0 -130px; display: inline-block;}
+.moinner figure img {width: 100%; height: 35px;}
+.moinner .util {margin-right: 34.5px;}
+.mobile {display: block; height: 100%;}
+.mobileButton {z-index: 6; position: absolute; transition: .3s ease-in-out; width: 25px; height: 15px; display: block; top: 25px; right: 20px;}
+.mobileButton > span {position: absolute; display: flex; height: 2px; border-radius: 4px; width: 100%; background-color: #fff; top: 0; transition: transform .2s ease-in-out, opacity .2s ease-in-out; }
+
+header.navbar.on .mobileButton span { background-color: #111;}
+
+.mobileButton > span:nth-child(1) {top: 0px;}
+.mobileButton > span:nth-child(2), .mobileButton > span:nth-child(3) {top: 8px;}
+.mobileButton > span:nth-child(4) {top: 16px;}
+.mobileButton.active > span:nth-child(1), .mobileButton.active > span:nth-child(4) {opacity: 0;}
+.mobileButton.active > span:nth-child(2) {transform: rotate(45deg);}
+.mobileButton.active > span:nth-child(3) {transform: rotate(-45deg);}
+
+.mobileButton > ul > li{list-style: none; padding: 0; margin: 0; opacity: 0;padding: 20px; font-size: 1.5rem;}
+
+.mobileButton > a{color: rgb(255, 255, 255); text-decoration: none; transition: opacity 0.2s ease;}
+
+.mobileButton > a:hover{color: white;}
+
+.mobileMenu{position: fixed; top: 0; right: 0; left: 0; background: url(../img/bg_banner.jpg)no-repeat center/cover; display: flex; align-items: center; justify-content: center; text-align: center; width: 100%; height: 100vh; opacity: 0; visibility: hidden; transition: 0.3s;}
+
+
+.mobileMenu .moMenu ul > li {color: #fff; font-size: 25px; line-height: 2.5;}
+.mobileMenu .moMenu ul > li:hover {box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; border-radius: 15px;}
+.mobileMenu.visible {height: 100%; opacity: 1; visibility: visible;}
+
+@keyframes fadeInLeft{
+    0% { opacity: 0; transform: translateX(0);}
+    100% { opacity: 1; transform: translateX(0);}
+}
+
+.mobileMenu.visible li{animation: fadeInLeft 0.3s ease forwards; }
+.mobileMenu.visible li:nth-child(1){animatio-delay: 0.23s;}
+.mobileMenu.visible li:nth-child(2){animatio-delay: 0.26s;}
+.mobileMenu.visible li:nth-child(3){animatio-delay: 0.29s;}
+.mobileMenu.visible li:nth-child(4){animatio-delay: 0.32s;}
+.mobileMenu.visible li:nth-child(5){animatio-delay: 0.35s;}
+
+/* -------------------------------------------------- */
+
+.main .content:first-child .maintext h2 {font-size: 28px;}
+.main .content:first-child .maintext p {font-size: 14px;}
+
+.main .content:nth-child(2) .maintext {bottom: 50%; left: 10%; width: 520px;}
+.main .content:nth-child(2) .maintext h2 {font-size: 28px;}
+.main .content:nth-child(2) .maintext p {font-size: 14px;}
+
+.main .content:nth-child(3) .maintext {top: 20%; left: 10%; width: 500px;}
+.main .content:nth-child(3) .maintext h2 {font-size: 28px;}
+.main .content:nth-child(3) .maintext p {font-size: 14px;}
+
+.main .content:nth-child(4) .maintext {bottom: 30%;}
+.main .content:nth-child(4) .maintext h2 {font-size: 28px;}
+.main .content:nth-child(4) .maintext p {font-size: 14px;}
+
+/* -------------------------------------------------- */
+
+/* footer  */
+footer .fooBg .bg_banner {border-radius: 70px 0 0 0;}
+
+/* footer 글씨 효과 */
+footer .fooBg .foonTop .foonani  {width: 350px;}
+footer .fooBg .foonTop .foonani .aniText1 {font-size: 25px;}
+footer .fooBg .foonTop .foonani .aniText  {width: 325px;}
+footer .fooBg .foonTop .foonani .aniText::before {font-size: 25px;/*  width: 100%; height: 100%; */ }
+
+/* .footbotom */
+footer .footbotom {height: 200px;}
+footer .footbotom .footerArea {width: 580px;}
+.fooText .fooTopText , .fooText .foomidText {font-size: 10px; line-height: 1.7;}
+.fooText .foocopy {font-size: 13px;}
+
+
+/* foomidImg 모바일 */
+.footbotom .foomidImg .reservation, .footbotom .foomidImg .map {display: none;}
+
