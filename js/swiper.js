@@ -16,8 +16,8 @@ var swiper = new Swiper(".NoticeSwiper", {
     breakpoints: {
         // 화면의 넓이가 640px 이상일 때
         640: {
-            slidesPerView: 2.5,
-            spaceBetween: 60,
+            slidesPerView: 1.9,
+            spaceBetween: 20,
             },
         // 화면의 넓이가 480px 이상일 때
         480: {

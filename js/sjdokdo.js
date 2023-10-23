@@ -109,3 +109,5 @@ function submit_check() {
         submit();
     }
   };
+
+  alert("본 페이지는 Pc=1920px, 모바일=640px에 적합한 페이지입니다.")
