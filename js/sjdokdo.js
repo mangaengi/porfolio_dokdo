@@ -91,23 +91,21 @@ $(function(){
 
 /* 로그인 */
 function submit_check() {
-      
+    
     // 입력 폼 아이디값 담기
     let id = document.getElementById("id");
     let pw = document.getElementById("pw");
 
     if (id.value == ""){
-      alert("아이디를 입력하세요.");
-      id.focus();
-      return false;
+        alert("아이디를 입력하세요.");
+        id.focus();
+        return false;
     } else if (pw.value == "") {
-      alert("비밀번호를 입력하세요.");
-      pw.focus();
-      return false;
+        alert("비밀번호를 입력하세요.");
+        pw.focus();
+        return false;
     } else {
         alert("환영합니다");
         submit();
     }
-  };
-
-  alert("본 페이지는 Pc=1920px, 모바일=640px에 적합한 페이지입니다.")
+};

@@ -1,7 +1,7 @@
-        /* AOS_JS */
-        AOS.init();
+/* AOS_JS */
+AOS.init();
     
-        /* 상단 스와이퍼 */
+/* 상단 스와이퍼 */
 var swiper = new Swiper(".BgSwiper", {
     rewind: true,
     loop : true,
@@ -17,11 +17,6 @@ var swiper = new Swiper(".NoticeSwiper", {
         // 화면의 넓이가 640px 이상일 때
         640: {
             slidesPerView: 1.9,
-            spaceBetween: 20,
-            },
-        // 화면의 넓이가 480px 이상일 때
-        480: {
-            slidesPerView: 2,
             spaceBetween: 20,
             },
         },

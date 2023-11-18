@@ -56,7 +56,7 @@ header.navbar.on .mobileButton span { background-color: #111;}
 
 /* -------------------------------------------------- */
 /* .mainTop */
-.mainTop {width: 38.750em; height: 20.625em; border-radius: 0 0 3.750em 0;} 
+.mainTop {width: 100%; height: 20.625em; border-radius: 0 0 3.750em 0;} 
 .mainText {bottom: 28%;}
 .mainText h2 {font-size: 1.625em;}
 .mainText .maText {font-size: 0.875em;}

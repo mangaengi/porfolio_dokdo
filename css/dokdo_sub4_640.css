@@ -56,7 +56,7 @@ header.navbar.on .mobileButton span { background-color: #111;}
 .mobileMenu.visible li:nth-child(5){animatio-delay: 0.35s;}
 
 /* .mainTop */
-.mainTop {width: 620px; height: 330px; border-radius: 0 0 60px 0; margin-bottom: 80px;} 
+.mainTop {width: 100%; height: 330px; border-radius: 0 0 60px 0; margin-bottom: 80px;} 
 .mainText {bottom: 28%;}
 .mainText h2 {font-size: 26px;}
 .mainText .maText {font-size: 14px;}
@@ -83,7 +83,7 @@ header.navbar.on .mobileButton span { background-color: #111;}
 .tab_group .tab_content:nth-child(2) h2 {font-size: 28px;}
 
 /* .tab_content .Viewing  */
-.tab_group .tab_content .Viewing {width: 600px; height: 1100px; margin-bottom: 230px;  }
+.tab_group .tab_content .Viewing {width: 100%; height: 1100px; margin-bottom: 230px;  }
 .tab_group .tab_content .Viewing figure {float: none; width: 100%; height: 600px;}
 
 .tab_content .Viewing .ViewingText {float: none; width: 100%; height: 600px; margin-bottom: 30px;}
